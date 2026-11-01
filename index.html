@@ -14,47 +14,49 @@ button{font:inherit;font-size:14px;padding:8px 16px;margin:0 0 14px;border:0;bor
 <body>
 
 <h2>Email signature</h2>
-<p>One signature for computer and phone (adapts to the screen width).</p>
+<p>One signature for computer and phone (on a narrow phone the details wrap under the logo).</p>
 <button type="button" onclick="copySig('sig-desktop',this)">Copy signature</button><br>
 <div class="box">
 <!-- ===== DESKTOP SIGNATURE ===== -->
 <div id="sig-desktop">
-<table dir="ltr" cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%" style="direction:ltr;text-align:left;border-collapse:collapse;width:100%;max-width:520px;background:transparent;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;">
-  <tr>
-    <td dir="ltr" width="26%" valign="middle" align="left" style="direction:ltr;text-align:left;width:26%;padding:0;">
-      <a href="https://www.prestigecarpet.net" target="_blank" style="text-decoration:none;border:0;"><img src="https://alsady.vercel.app/images/v2/logo.png" width="135" height="103" alt="Prestige Carpet Industry" style="display:block;border:0;outline:none;width:100%;max-width:135px;height:auto;"></a>
-    </td>
-    <td dir="ltr" width="12%" valign="middle" align="left" style="direction:ltr;text-align:left;width:12%;padding:0;">
-      <img src="https://alsady.vercel.app/images/v2/wave.png" width="62" height="236" alt="" style="display:block;border:0;outline:none;width:100%;max-width:62px;height:auto;">
-    </td>
-    <td dir="ltr" width="62%" valign="middle" align="left" style="direction:ltr;text-align:left;width:62%;padding:0 0 0 4px;">
-      <table dir="ltr" cellpadding="0" cellspacing="0" border="0" role="presentation" style="direction:ltr;border-collapse:collapse;">
-        <tr><td dir="ltr" colspan="2" style="direction:ltr;text-align:left;padding:0 0 1px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:20px;line-height:24px;font-weight:bold;color:#2b2b2b;">Ahmad <span style="color:#e41e26;">Alsaady</span></td></tr>
-        <tr><td dir="ltr" colspan="2" style="direction:ltr;text-align:left;padding:0 0 9px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#333333;">County Manager of KSA &amp; KUWAIT</td></tr>
+<div dir="ltr" style="direction:ltr;text-align:left;max-width:100%;font-size:0;line-height:0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;">
+  <!-- Logo + red wave (wraps above the details on narrow screens) -->
+  <div style="display:inline-block;vertical-align:middle;max-width:100%;margin:0 8px 0 0;">
+    <table dir="ltr" cellpadding="0" cellspacing="0" border="0" role="presentation" style="direction:ltr;border-collapse:collapse;">
+      <tr>
+        <td dir="ltr" width="108" valign="middle" style="direction:ltr;width:108px;padding:0;"><a href="https://www.prestigecarpet.net" target="_blank" style="text-decoration:none;border:0;"><img src="https://alsady.vercel.app/images/v2/logo.png" width="108" height="83" alt="Prestige Carpet Industry" style="display:block;border:0;outline:none;width:108px;height:83px;"></a></td>
+        <td dir="ltr" width="44" valign="middle" style="direction:ltr;width:44px;padding:0;"><img src="https://alsady.vercel.app/images/v2/wave.png" width="44" height="167" alt="" style="display:block;border:0;outline:none;width:44px;height:167px;"></td>
+      </tr>
+    </table>
+  </div>
+  <!-- Contact details -->
+  <div style="display:inline-block;vertical-align:middle;max-width:100%;">
+    <table dir="ltr" cellpadding="0" cellspacing="0" border="0" role="presentation" style="direction:ltr;border-collapse:collapse;">
+      <tr><td dir="ltr" colspan="2" style="direction:ltr;text-align:left;padding:0 0 1px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:20px;line-height:24px;font-weight:bold;color:#2b2b2b;">Ahmad <span style="color:#e41e26;">Alsaady</span></td></tr>
+      <tr><td dir="ltr" colspan="2" style="direction:ltr;text-align:left;padding:0 0 9px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:11px;line-height:14px;color:#333333;">County Manager of KSA &amp; KUWAIT</td></tr>
           <tr>
             <td dir="ltr" width="24" valign="middle" style="direction:ltr;width:24px;padding:0 4px 6px 0;"><a href="tel:+966553988947" style="text-decoration:none;border:0;"><img src="https://alsady.vercel.app/images/v2/icon-phone-ksa.png" width="20" height="19" alt="Phone" style="display:block;border:0;width:20px;height:19px;"></a></td>
-            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 6px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:11.5px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="tel:+966553988947" style="color:#2b2b2b;text-decoration:none;">+966 553988947</a>&nbsp;|&nbsp;KSA</td>
+            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 6px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="tel:+966553988947" style="color:#2b2b2b;text-decoration:none;">+966 553988947</a>&nbsp;|&nbsp;KSA</td>
           </tr>
           <tr>
             <td dir="ltr" width="24" valign="middle" style="direction:ltr;width:24px;padding:0 4px 6px 0;"><a href="tel:+971501537393" style="text-decoration:none;border:0;"><img src="https://alsady.vercel.app/images/v2/icon-phone-uae.png" width="20" height="19" alt="Phone" style="display:block;border:0;width:20px;height:19px;"></a></td>
-            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 6px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:11.5px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="tel:+971501537393" style="color:#2b2b2b;text-decoration:none;">+971 501537393</a>&nbsp;|&nbsp;UAE</td>
+            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 6px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="tel:+971501537393" style="color:#2b2b2b;text-decoration:none;">+971 501537393</a>&nbsp;|&nbsp;UAE</td>
           </tr>
           <tr>
             <td dir="ltr" width="24" valign="middle" style="direction:ltr;width:24px;padding:0 4px 6px 0;"><a href="mailto:ahsaady@prestigecarpet.net" style="text-decoration:none;border:0;"><img src="https://alsady.vercel.app/images/v2/icon-mail.png" width="20" height="19" alt="Email" style="display:block;border:0;width:20px;height:19px;"></a></td>
-            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 6px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:11.5px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="mailto:ahsaady@prestigecarpet.net" style="color:#2b2b2b;text-decoration:underline;">ahsaady@prestigecarpet.net</a></td>
+            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 6px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="mailto:ahsaady@prestigecarpet.net" style="color:#2b2b2b;text-decoration:underline;">ahsaady@prestigecarpet.net</a></td>
           </tr>
           <tr>
             <td dir="ltr" width="24" valign="middle" style="direction:ltr;width:24px;padding:0 4px 6px 0;"><a href="https://www.prestigecarpet.net" target="_blank" style="text-decoration:none;border:0;"><img src="https://alsady.vercel.app/images/v2/icon-web.png" width="20" height="19" alt="Website" style="display:block;border:0;width:20px;height:19px;"></a></td>
-            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 6px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:11.5px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="https://www.prestigecarpet.net" target="_blank" style="color:#2b2b2b;text-decoration:underline;">www.prestigecarpet.net</a></td>
+            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 6px 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="https://www.prestigecarpet.net" target="_blank" style="color:#2b2b2b;text-decoration:underline;">www.prestigecarpet.net</a></td>
           </tr>
           <tr>
             <td dir="ltr" width="24" valign="middle" style="direction:ltr;width:24px;padding:0 4px 0 0;"><a href="https://www.google.com/maps/search/?api=1&amp;query=AlMalaz+District+Riyadh+Saudi+Arabia" target="_blank" style="text-decoration:none;border:0;"><img src="https://alsady.vercel.app/images/v2/icon-map.png" width="20" height="19" alt="Location" style="display:block;border:0;width:20px;height:19px;"></a></td>
-            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 0 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:11.5px;line-height:16px;color:#2b2b2b;"><a href="https://www.google.com/maps/search/?api=1&amp;query=AlMalaz+District+Riyadh+Saudi+Arabia" target="_blank" style="color:#2b2b2b;text-decoration:none;">Riyadh - AlMalaz District - KSA</a></td>
+            <td dir="ltr" valign="middle" style="direction:ltr;text-align:left;padding:0 0 0 0;font-family:'Segoe UI',Roboto,Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;color:#2b2b2b;white-space:nowrap;"><a href="https://www.google.com/maps/search/?api=1&amp;query=AlMalaz+District+Riyadh+Saudi+Arabia" target="_blank" style="color:#2b2b2b;text-decoration:none;">Riyadh - AlMalaz District - KSA</a></td>
           </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+    </table>
+  </div>
+</div>
 </div>
 </div>
 
